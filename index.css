@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-image: url(https://q-xx.bstatic.com/images/hotel/max1024x768/185/185640268.jpg);
+  background-size: cover;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 20%;
+  padding: 20px;
+  width: 35%;
+  margin: 0 32%;
+  background-color: rgb(227, 232, 252);
+  box-shadow: 3px 3px 29px -2px #363636;
+}
+
+.time-section {
+  display: flex;
+  flex-direction: column;
+  height: 52%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.time-count {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.time-text {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
