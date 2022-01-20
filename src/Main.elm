@@ -50,7 +50,7 @@ update msg model =
 
 villaTime : Time.Posix
 villaTime =
-  Time.millisToPosix 1619697600000
+  Time.millisToPosix 1643904000000
 
 adjustTime : Time.Posix -> Time.Posix
 adjustTime currentTime =
@@ -99,7 +99,7 @@ view model =
   in
   main_ [] 
     [ h1 []
-        [ text "Villa" ]
+        [ text "Cramim" ]
     , div [ class "clock" ]
         [ div [ class "time-section" ]
             [ span [ class "time-count" ] [ text (renderClock day) ]
