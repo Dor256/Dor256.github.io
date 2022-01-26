@@ -48,13 +48,13 @@ update msg model =
       , Cmd.none
       )
 
-villaTime : Time.Posix
-villaTime =
+hotelTime : Time.Posix
+hotelTime =
   Time.millisToPosix 1643904000000
 
 adjustTime : Time.Posix -> Time.Posix
 adjustTime currentTime =
-  (Time.posixToMillis villaTime) - (Time.posixToMillis currentTime)
+  (Time.posixToMillis hotelTime) - (Time.posixToMillis currentTime)
     |> Time.millisToPosix
 
 
