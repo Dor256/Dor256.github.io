@@ -48,13 +48,13 @@ update msg model =
       , Cmd.none
       )
 
-hotelTime : Time.Posix
-hotelTime =
-  Time.millisToPosix 1643904000000
+flightTime : Time.Posix
+flightTime =
+  Time.millisToPosix 1650059400000
 
 adjustTime : Time.Posix -> Time.Posix
 adjustTime currentTime =
-  (Time.posixToMillis hotelTime) - (Time.posixToMillis currentTime)
+  (Time.posixToMillis flightTime) - (Time.posixToMillis currentTime)
     |> Time.millisToPosix
 
 
@@ -99,7 +99,7 @@ view model =
   in
   main_ [] 
     [ h1 []
-        [ text "Cramim" ]
+        [ text "New York" ]
     , div [ class "clock" ]
         [ div [ class "time-section" ]
             [ span [ class "time-count" ] [ text (renderClock day) ]

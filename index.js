@@ -5618,14 +5618,14 @@ var $author$project$Main$subscriptions = function (_v0) {
 		1000,
 		$elm$core$Basics$always($author$project$Main$Tick));
 };
+var $author$project$Main$flightTime = $elm$time$Time$millisToPosix(1650059400000);
 var $elm$time$Time$posixToMillis = function (_v0) {
 	var millis = _v0;
 	return millis;
 };
-var $author$project$Main$villaTime = $elm$time$Time$millisToPosix(1643904000000);
 var $author$project$Main$adjustTime = function (currentTime) {
 	return $elm$time$Time$millisToPosix(
-		$elm$time$Time$posixToMillis($author$project$Main$villaTime) - $elm$time$Time$posixToMillis(currentTime));
+		$elm$time$Time$posixToMillis($author$project$Main$flightTime) - $elm$time$Time$posixToMillis(currentTime));
 };
 var $elm$core$Platform$Cmd$batch = _Platform_batch;
 var $elm$core$Platform$Cmd$none = $elm$core$Platform$Cmd$batch(_List_Nil);
@@ -5701,7 +5701,7 @@ var $author$project$Main$view = function (model) {
 				_List_Nil,
 				_List_fromArray(
 					[
-						$elm$html$Html$text('Cramim')
+						$elm$html$Html$text('New York')
 					])),
 				A2(
 				$elm$html$Html$div,
